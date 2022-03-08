@@ -1,0 +1,91 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+section{
+  position: absolute;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.weathers{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.weathers div{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.control{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.control .icon, .btns{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap:12px;
+}
+
+.control .icon{
+  position: absolute;
+  top:0;
+  height: 50vh;
+}
+
+.control .btns{
+  position: absolute;
+  top:50%;
+}
+
+.control .icon img{
+  width: 120px;
+  filter: blur(1px) drop-shadow(10px 10px 5px #fff) invert(1);
+}
+
+.control .btns button{
+  border-style: none;
+  width: 85px;
+  padding: 10px 7px;
+  background:#222;
+  opacity: 0.4;
+  border-radius: 5px;
+  font-weight : 500;
+  font-size: 20px;
+}
+
+#c1{
+  color: gold;
+}
+#c2{
+  color: gray;
+}
+#c3{
+  color: skyblue;
+}
+#c4{
+  color: white;
+}
+
+video{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: .8;
+}
+
